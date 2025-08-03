@@ -50,22 +50,23 @@ function pausarParaContinuar() {
 function pistas() {
     // Usamos um loop infinito que só será quebrado quando o jogador escolher sair.
     while (true) {
-        console.clear();
-        console.log("---------------------------------------------------------------");
-        console.log("-> Você tem", itensNoInventario," pistas:");
-        console.log("---------------------------------------------------------------");
-
         // Criamos um contador para saber se algum item foi exibido.
         let itensNoInventario = 0;
+        console.clear();
+        console.log ("---------------------------------------------------------------------------")
+        console.log("-> Você tem", itensNoInventario,"pistas:");
+        console.log ("---------------------------------------------------------------------------")
+
+        // Criamos um contador para saber se algum item foi exibido.
 
         // Agora, verificamos cada item separadamente.
         if (pistadelegado) {
             console.log ("-> Desaparecimentos após as 22 horas")
-            console.log("---------------------------------------------------------------");
+            console.log ("---------------------------------------------------------------------------")
             console.log ("-> Crianças entre 6 a 10 anos")
-            console.log("---------------------------------------------------------------");
+            console.log ("---------------------------------------------------------------------------")
             console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
-            console.log("---------------------------------------------------------------");
+            console.log ("---------------------------------------------------------------------------")
             itensNoInventario++; // Aumenta o contador se o item existe.
             itensNoInventario++
             itensNoInventario++
@@ -76,14 +77,14 @@ function pistas() {
         // Se o contador for 0, significa que o inventário está vazio.
         if (itensNoInventario === 0) {
             console.log("-> Você ainda não achou nenhuma pista!");
-            console.log("---------------------------------------------------------------");
         }
 
-        console.log("---------------------------------------------------------------");
+        console.log ("---------------------------------------------------------------------------")
         console.log("-> Você quer voltar?");
+        console.log ("---------------------------------------------------------------------------")
         console.log("[01] SIM");
         console.log("[02] NÃO");
-        console.log("---------------------------------------------------------------");
+        console.log ("---------------------------------------------------------------------------")
         
         // Renomeei a variável para não ter o mesmo nome da função.
         let escolha = Number(prompt("> "));
@@ -413,6 +414,9 @@ let contador = 0
 let hos = false
 let ANNOYING_ENDING = false
 let delega1 =false
+let poli = false
+let pistadelegado = false
+
 
 //jogo em si
 
@@ -695,7 +699,7 @@ let overwrite = "S"
                 console.clear();
                 console.log("---------------------------------------------------------------");
                 console.log("-> Criação de conta ignorada!");
-                console.log("---------------------------------------------------------------");
+
             }
             
             pausarParaContinuar()
@@ -806,10 +810,6 @@ console.log ("-> Laura te olha, percebendo sua angústia: 'Ela tá bem?'")
 console.log ("-> Você força um sorriso fraco, tentando convencer a si mesmo:")
 console.log ("-> 'Deve estar sonhando. É só um pesadelo.'")
 console.log ("-------------------------------------------------------------------")
-console.log ("")
-console.log ("")
-console.log ("")
-console.log ("-------------------------------------------------------------------")
 console.log ("OPÇÕES")
 console.log ("-------------------------------------------------------------------")
 console.log ("[01] Continuar para a Delegacia")
@@ -826,7 +826,6 @@ if (cidade == 1) {
     console.log ("-------------------------------------------------------------------")
     console.log ("-> Depois de você olhar a hospedaria...")
     console.log ("-> você decidi ir para a delegacia!")
-    console.log ("-------------------------------------------------------------------")
     pausarParaContinuar()
     jogoativo2 = false
     } else if (contador == 3) {
@@ -834,14 +833,12 @@ if (cidade == 1) {
         console.log ("-------------------------------------------------------------------")
         console.log ("-> Depois de deixar a laura estressada...")
         console.log ("-> Você segue para a delegacia!")
-        console.log ("-------------------------------------------------------------------")
         pausarParaContinuar()
         jogoativo2 = false
     } else {
         console.clear()
         console.log ("-------------------------------------------------------------------")
         console.log ("-> Você sem nem pensar escolhe ir para a delegacia!")
-        console.log ("-------------------------------------------------------------------")
         pausarParaContinuar()
         jogoativo2 = false
     }
@@ -945,7 +942,7 @@ console.clear()
 
 while (jogoativo3 == true) {
     console.log ("-------------------------------------------------------------------")
-    console.log ("-> Chegando na delegacia, você vê três pessoas...")
+    console.log ("-> Na delegacia, você vê três pessoas...")
     console.log ("-------------------------------------------------------------------")
     console.log ("OPÇÕES:")
     console.log ("-------------------------------------------------------------------")
@@ -1018,12 +1015,27 @@ console.clear()
         console.log ("-> Desaparecimentos após as 22 horas")
         console.log ("-> Crianças entre 6 a 10 anos")
         console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
-        console.log ("-------------------------------------------------------------------")
         pausarParaContinuar()
     
 
     } else if (dele == 2){
-
+        if (poli == false) {
+        poli = true
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> Você decidi falar com o policial primeiro!")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: 'Olá, bom dia!'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> POLICIAL: 'Ah oi! Você deve ser o Elias?'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: 'Sim, eu estou encarregado do caso sobre os desaparecimentos!'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> POLICIAL: 'Ah estivemos coletando algumas informações, quem tava")
+        console.log ("no comando é o delegado, por que você não fala com ele?'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: Ok, vou lá perguntar a ele! obrigado pela ajuda!")
+        pausarParaContinuar()
+    }
     } else if (dele == 3) {
 
     } else if (dele == 4) {
