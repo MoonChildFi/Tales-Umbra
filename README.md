@@ -2,8 +2,6 @@
 
 Um prequel de Pale Luna: Terminal Edition
 
----
-
 ## Instalação
 
 - Acesse o itch.io;
@@ -11,7 +9,5 @@ Um prequel de Pale Luna: Terminal Edition
 - Escolha a sua opção (.zip ou installer)
 - Instale ou extraia o o jogo
 - Pronto
-
----
 
 ## Made by Sad Berry Games
