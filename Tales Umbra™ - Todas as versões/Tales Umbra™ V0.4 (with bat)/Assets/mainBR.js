@@ -973,7 +973,7 @@ console.clear()
         let delega = Number(prompt("> "))
 
         if(delega == 1) {
-
+            
         } else if (delega == 2) {
 
         } else {
