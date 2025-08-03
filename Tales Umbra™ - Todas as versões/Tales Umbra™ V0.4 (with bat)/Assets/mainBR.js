@@ -619,6 +619,9 @@ console.log('Lista de finais:', finais);
         console.log ("[01] Não utilize caracteres especiais (ex:?:^}:{)")
         console.log ("[02] Não feche o jogo durante uma ação, isso pode afetar o seu progresso!")
         console.log ("[03] Se houver [->] narração, caso contrario [''] fala de personagem.")
+        console.log ('[04] Para a melhor experiencia, por favor, evite redimensionar');
+        console.log ('a janela do terminal. Recomenda-se o tamanho inicial. (se estiver no windows');
+        console.log ("10/11, deixe em tela cheia!)")
         console.log ("---------------------------------------------------------------------------")
         console.log ("INICIAR?")
         console.log ("---------------------------------------------------------------------------")
