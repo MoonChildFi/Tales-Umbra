@@ -47,35 +47,36 @@ function pausarParaContinuar() {
     console.clear();
 }
 
-function inventario() {
+function pistas() {
     // Usamos um loop infinito que só será quebrado quando o jogador escolher sair.
     while (true) {
         console.clear();
         console.log("---------------------------------------------------------------");
-        console.log("-> Você tem no seu inventário as seguintes coisas:");
+        console.log("-> Você tem", itensNoInventario," pistas:");
         console.log("---------------------------------------------------------------");
 
         // Criamos um contador para saber se algum item foi exibido.
         let itensNoInventario = 0;
 
         // Agora, verificamos cada item separadamente.
-        if (papega) {
-            console.log("-> Pá");
+        if (pistadelegado) {
+            console.log ("-> Desaparecimentos após as 22 horas")
+            console.log("---------------------------------------------------------------");
+            console.log ("-> Crianças entre 6 a 10 anos")
+            console.log("---------------------------------------------------------------");
+            console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
+            console.log("---------------------------------------------------------------");
             itensNoInventario++; // Aumenta o contador se o item existe.
+            itensNoInventario++
+            itensNoInventario++
         }
-        if (temChave) {
-            console.log("-> Chaves");
-            itensNoInventario++;
-        }
-        if (chavedois) {
-            console.log("-> Chave (Lápide)");
-            itensNoInventario++;
-        }
-        // Se você quiser adicionar um novo item, basta adicionar um novo `if` aqui!
+
+        // Se quiser adicionar um novo item, basta adicionar um novo `if` aqui!
 
         // Se o contador for 0, significa que o inventário está vazio.
         if (itensNoInventario === 0) {
-            console.log("-> Você ainda não pegou nenhum item!");
+            console.log("-> Você ainda não achou nenhuma pista!");
+            console.log("---------------------------------------------------------------");
         }
 
         console.log("---------------------------------------------------------------");
@@ -951,7 +952,8 @@ while (jogoativo3 == true) {
     console.log ("[02] Policial.")
     console.log ("[03] Relator do caso.")
     console.log ("-------------------------------------------------------------------")
-
+    console.log ("[04] Consultar Pistas")
+    console.log ("-------------------------------------------------------------------")
     let dele = Number(prompt("> "))
 
 console.clear()
@@ -971,21 +973,58 @@ console.clear()
         console.log ("-------------------------------------------------------------------")
 
         let delega = Number(prompt("> "))
-
+        console.clear()
         if(delega == 1) {
-            
+            if(delega1 == true){
+                console.log ("-------------------------------------------------------------------")
+                console.log ("-> Você ja falou com ele!")
+                console.log ("-------------------------------------------------------------------")
+                pausarParaContinuar()
+            } else {
+            delega1 = true
+            console.log ("-------------------------------------------------------------------")
+            console.log ("-> ELIAS: 'Muito prazer!, Lucio! Você poderia me falar mais sobre o caso?'")
+            console.log ("-------------------------------------------------------------------")
         } else if (delega == 2) {
-
+            console.log ("-------------------------------------------------------------------")
+            console.log ("-> ELIAS: 'Ah prazer, vamos direto ao ponto?'")
+            console.log ("-------------------------------------------------------------------")
+            console.log ("-> Lucio olha pra você com uma expressão de como queria te mata!")
+            console.log ("-------------------------------------------------------------------")
+            console.log ("-> ATENÇÃO: Essa escolha poderá trazer consequencias")
+            console.log ("-------------------------------------------------------------------")
         } else {
             Opcãoinvalida()
         }
 
-
+        console.log ("-> LUCIO: 'Certo, o caso é o seguinte, nessa ultima semana varios pais")
+        console.log ("tem relatado o desaparecimento de seus filhos.")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: 'Ta, mas vocês acharam mais alguma informação?")
+        console.log ("Tipo: hora que desapareceu, local ou se tem alguma pista!")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> LUCIO: 'Bom pelo o que eu vi nos documentos, todos eles seguem um padrão!'")
+        console.log ("-> Desaparecimentos após as 22 horas")
+        console.log ("-> Crianças entre 6 a 10 anos")
+        console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: 'Ok vou anotar no meu caderno sobre isso, obrigado pelas informações!'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> Você anota as seguintes pistas em seu caderno:")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> Desaparecimentos após as 22 horas")
+        console.log ("-> Crianças entre 6 a 10 anos")
+        console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
+        console.log ("-------------------------------------------------------------------")
+        pausarParaContinuar()
+    }
 
     } else if (dele == 2){
 
     } else if (dele == 3) {
 
+    } else if (dele == 4) {
+        pistas()
     } else {
         Opcãoinvalida()
     }
