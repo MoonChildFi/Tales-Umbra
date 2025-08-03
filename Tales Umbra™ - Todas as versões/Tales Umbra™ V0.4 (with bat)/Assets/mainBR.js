@@ -412,6 +412,7 @@ let contexto = false
 let contador = 0
 let hos = false
 let ANNOYING_ENDING = false
+let delega1 =false
 
 //jogo em si
 
@@ -958,6 +959,13 @@ while (jogoativo3 == true) {
 
 console.clear()
     if (dele == 1){
+        if (delega1 == true) {
+            console.log ("-------------------------------------------------------------------")
+            console.log ("-> Você ja falou com ele!")
+            console.log ("-------------------------------------------------------------------")
+            pausarParaContinuar()
+        }
+        delega1 = true
         console.log ("-------------------------------------------------------------------")
         console.log ("-> Você inicia a conversa com o delegado!")
         console.log ("-------------------------------------------------------------------")
@@ -974,14 +982,9 @@ console.clear()
 
         let delega = Number(prompt("> "))
         console.clear()
+
+        
         if(delega == 1) {
-            if(delega1 == true){
-                console.log ("-------------------------------------------------------------------")
-                console.log ("-> Você ja falou com ele!")
-                console.log ("-------------------------------------------------------------------")
-                pausarParaContinuar()
-            } else {
-            delega1 = true
             console.log ("-------------------------------------------------------------------")
             console.log ("-> ELIAS: 'Muito prazer!, Lucio! Você poderia me falar mais sobre o caso?'")
             console.log ("-------------------------------------------------------------------")
@@ -1017,7 +1020,7 @@ console.clear()
         console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
         console.log ("-------------------------------------------------------------------")
         pausarParaContinuar()
-    }
+    
 
     } else if (dele == 2){
 
