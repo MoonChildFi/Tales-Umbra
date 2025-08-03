@@ -50,15 +50,15 @@ function pausarParaContinuar() {
 function pistas() {
     // Usamos um loop infinito que só será quebrado quando o jogador escolher sair.
     while (true) {
-        // Criamos um contador para saber se algum item foi exibido.
-        let itensNoInventario = 0;
+        // Criamos um contador para saber se algum item foi exibido
+
         console.clear();
         console.log ("---------------------------------------------------------------------------")
-        console.log("-> Você tem", itensNoInventario,"pistas:");
+        console.log("-> Você tem as seguintes pistas:");
         console.log ("---------------------------------------------------------------------------")
 
         // Criamos um contador para saber se algum item foi exibido.
-
+        let itensNoInventario = 0;
         // Agora, verificamos cada item separadamente.
         if (pistadelegado) {
             console.log ("-> Desaparecimentos após as 22 horas")
@@ -67,9 +67,8 @@ function pistas() {
             console.log ("---------------------------------------------------------------------------")
             console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
             console.log ("---------------------------------------------------------------------------")
-            itensNoInventario++; // Aumenta o contador se o item existe.
-            itensNoInventario++
-            itensNoInventario++
+            itensNoInventario+=3;
+            console.log ("-> TOTAL:", itensNoInventario, "pistas") // Aumenta o contador se o item existe.
         }
 
         // Se quiser adicionar um novo item, basta adicionar um novo `if` aqui!
@@ -717,6 +716,21 @@ console.log("você não consegue passar muito tempo com suas duas filhas, mas-")
 pausarParaContinuar()
     }
 contexto  = true
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("██                                                               ██")
+console.log ("██                     ████████████████                          ██")
+console.log ("██                     ██            ██                          ██")
+console.log ("██                     ██   ██████   ██                          ██")
+console.log ("██                     ██  █      █  ██                          ██")
+console.log ("██                     ██   ██████   ██                          ██")
+console.log ("██                     ██  ██        ██                          ██")
+console.log ("██                     ██            ██                          ██")
+console.log ("██                     ██            ██                          ██")
+console.log ("██                     ██            ██                          ██")
+console.log ("██                     ████████████████                          ██")
+console.log ("██                                                               ██")
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("")
 console.log ("---------------------------------------------------------------------------")
 console.log("-> Seu celular está vibrando...")
 console.log("-> É a Laura sua colega e ajudante...")
@@ -737,6 +751,24 @@ if (atender == 2){
 }
 
 console.clear()
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("██                                                               ██")
+console.log ("██                  ███████████                                  ██")
+console.log ("██                ███████████████                                ██")
+console.log ("██                ███████████████                                ██")
+console.log ("██                █████████████                                  ██")
+console.log ("██                ███████████                                    ██")
+console.log ("██                ███████████                                    ██")
+console.log ("██                ███████████                                    ██")
+console.log ("██                  ███████████                                  ██")
+console.log ("██                    ███████████    ██████                      ██")
+console.log ("██                      █████████████████████                    ██")
+console.log ("██                        █████████████████████                  ██")
+console.log ("██                          ███████████████████                  ██")
+console.log ("██                            ███████████████                    ██")
+console.log ("██                                                               ██")
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("")
 console.log ("---------------------------------------------------------------------------")
 console.log ("-> LAURA: 'Eai Elias, queria te dizer que surgiu uma oporturnidade para nós dois!'")
 console.log ("---------------------------------------------------------------------------")
@@ -768,6 +800,21 @@ pausarParaContinuar()
 
 
 console.clear()
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("██                                                               ██")
+console.log ("██                                                               ██")
+console.log ("██                            ██                                 ██")
+console.log ("██                            ████                               ██")
+console.log ("██                            ████████                           ██")
+console.log ("██   █████████████████████████████████████                       ██")
+console.log ("██   █████████████████████████████████████                       ██")
+console.log ("██                            ████████                           ██")
+console.log ("██                            ████                               ██")
+console.log ("██                            ██                                 ██")
+console.log ("██                                                               ██")
+console.log ("██                                                               ██")
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("")
 console.log ("---------------------------------------------------------------------------")
 console.log ("-> 1 SEMANA SE PASSA...")
 console.log ("-> VOCÊ, LAURA E SUAS FILHAS VIAJAM...")
@@ -780,6 +827,21 @@ console.clear()
 
 while (jogoativo2 == true) {
 //inicio na cidade
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("██                                                               ██")
+console.log ("██                                                               ██")
+console.log ("██                                                               ██")
+console.log ("██         ██████████████████████████████████████                ██")
+console.log ("██         ██                                  ██                ██")
+console.log ("██         ██      ██  ██        ████      ██  ██                ██")
+console.log ("██         ██    ██  ██  ██     ██    ██       ██                ██")
+console.log ("██         ██  ██                              ██                ██")
+console.log ("██         ██████████████████████████████████████                ██")
+console.log ("██                      ██        ██                             ██")
+console.log ("██                      ██        ██                             ██")
+console.log ("██                      ██        ██                             ██")
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("")
 console.log ("-------------------------------------------------------------------")
 console.log ("-> CAPÍTULO 1 – A CIDADE SILENCIOSA")
 console.log ("-------------------------------------------------------------------")
@@ -799,6 +861,23 @@ console.log ("-> avisasse em vez de acolher:")
 console.log ("===================================================================")
 console.log ("        ‘BEM-VINDO A RAVENHILL – Onde a Lua sempre brilha’")
 console.log ("===================================================================")
+pausarParaContinuar()
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("██                                                               ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                                                               ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                           ██████                              ██")
+console.log ("██                                                               ██")
+console.log ("███████████████████████████████████████████████████████████████████")
+console.log ("")
+console.log ("-------------------------------------------------------------------")
 console.log ("-> Você sente um calafrio percorrer sua espinha. As ruas estão")
 console.log ("-> vazias. Postes piscam com luz amarelada. As casas estão fechadas")
 console.log ("-> e parecem espiar.")
@@ -817,7 +896,6 @@ console.log ("[02] Olhar ao redor da hospedaria")
 console.log ("-------------------------------------------------------------------")
 console.log ("[03] Sair do jogo")
 console.log ("-------------------------------------------------------------------")
-console.log (contador)
 let cidade = Number(prompt("> "))
 
 if (cidade == 1) {
@@ -959,7 +1037,6 @@ console.clear()
         if (delega1 == true) {
             console.log ("-------------------------------------------------------------------")
             console.log ("-> Você ja falou com ele!")
-            console.log ("-------------------------------------------------------------------")
             pausarParaContinuar()
         }
         delega1 = true
@@ -1015,6 +1092,7 @@ console.clear()
         console.log ("-> Desaparecimentos após as 22 horas")
         console.log ("-> Crianças entre 6 a 10 anos")
         console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
+        pistadelegado=true
         pausarParaContinuar()
     
 
@@ -1035,7 +1113,13 @@ console.clear()
         console.log ("-------------------------------------------------------------------")
         console.log ("-> ELIAS: Ok, vou lá perguntar a ele! obrigado pela ajuda!")
         pausarParaContinuar()
+    } else {
+        console.log ("-------------------------------------------------------------------")
+            console.log ("-> Você ja falou com ele!")
+            pausarParaContinuar()
     }
+
+
     } else if (dele == 3) {
 
     } else if (dele == 4) {
