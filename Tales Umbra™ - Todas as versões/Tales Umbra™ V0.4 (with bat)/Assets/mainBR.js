@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')();
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
+
 //Mensagem para o usuario final: Se você esta vendo isso saiba que essa é uma mensagem escrita pelo criador do jogo
 //MoonChildFi (Lukz) e que eu agradeço muito por estar tendo a autonomia de ver o codigo para aprender, a unica
 //coisa que peço é não copiar e colar o meu codigo e reelançar o meu jogo so pra vc, pq como pode ver ele não usa nenhuma
@@ -941,7 +942,53 @@ if (out == "S" || "s") {
 console.clear()
 
 while (jogoativo3 == true) {
-    
+    console.log ("-------------------------------------------------------------------")
+    console.log ("-> Chegando na delegacia, você vê três pessoas...")
+    console.log ("-------------------------------------------------------------------")
+    console.log ("OPÇÕES:")
+    console.log ("-------------------------------------------------------------------")
+    console.log ("[01] Delegado Local.")
+    console.log ("[02] Policial.")
+    console.log ("[03] Relator do caso.")
+    console.log ("-------------------------------------------------------------------")
+
+    let dele = Number(prompt("> "))
+
+console.clear()
+    if (dele == 1){
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> Você inicia a conversa com o delegado!")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: 'Olá, sou o detetive Elias, estou encarregado do caso!'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> DELEGADO: 'Olá, ouvi falar muito de você por aqui.")
+        console.log ("Me chamo Lucio'!")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("OPÇÕES:")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("[01] 'Muito prazer!, Lucio! Você poderia me falar mais sobre o caso?'")
+        console.log ("[02] 'Ah prazer, vamos direto ao ponto?'")
+        console.log ("-------------------------------------------------------------------")
+
+        let delega = Number(prompt("> "))
+
+        if(delega == 1) {
+
+        } else if (delega == 2) {
+
+        } else {
+            Opcãoinvalida()
+        }
+
+
+
+    } else if (dele == 2){
+
+    } else if (dele == 3) {
+
+    } else {
+        Opcãoinvalida()
+    }
 }
 
         
