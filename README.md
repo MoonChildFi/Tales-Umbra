@@ -10,4 +10,4 @@ Um prequel de Pale Luna: Terminal Edition
 - Instale ou extraia o o jogo
 - Pronto
 
-## Made by Sad Berry Gamesaaa
+## Made by Sad Berry Games
