@@ -559,7 +559,7 @@ if(numero == 3){
     console.log ("-> HAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHHAHAHAHAHAHAHAHAHA")
     console.log ("-> HAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHHAHAHAHAHAHAHAHAHA")
     console.log ("-> HAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHHAHAHAHAHAHAHAHAHA")
-    process.exit(01)
+    process.exit()
 } else if (numero == 2){
 console.clear()
 console.log ("---------------------------------------------------------------------------")
@@ -570,7 +570,7 @@ console.log ("------------------------------------------------------------------
 exec('start cmd.exe /c goodbye.bat')
 const conteudo10002 = "3";
     fs.writeFileSync('../HAHAHAHAHAHAHA.txt', conteudo10002, 'utf8');
-    process.exit(01)
+    process.exit()
 } else if (numero == 1) {
 console.clear()
 console.log ("---------------------------------------------------------------------------")
@@ -578,7 +578,7 @@ console.log ("-> Você acha mesmo que depois do que você fez eu irei te deixar 
 console.log ("---------------------------------------------------------------------------")
     const conteudo10001 = "2";
     fs.writeFileSync('../HAHAHAHAHAHAHA.txt', conteudo10001, 'utf8');
-    process.exit(01)
+    process.exit()
 } else if (jogadortem == true) {
     console.clear()
     console.log ("---------------------------------------------------------------------------")
@@ -588,7 +588,7 @@ console.log ("------------------------------------------------------------------
         const conteudo1000 = "1";
         fs.writeFileSync('../HAHAHAHAHAHAHA.txt', conteudo1000, 'utf8');
     }
-    process.exit(01)
+    process.exit()
 }
 
 //jogo em si
@@ -641,10 +641,10 @@ console.log('Lista de finais:', finais);
             console.log ("---------------------------------------------------------------------------")
             console.log ("-> Que Pena!!")
             console.log ("---------------------------------------------------------------------------")
-            process.exit(02)
+            process.exit()
         } else if (inicio > 2 || inicio < 1){
             Opcãoinvalida()
-            process.exit(01)
+            process.exit()
         }
 
         console.clear();
