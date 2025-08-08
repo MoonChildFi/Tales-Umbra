@@ -1097,6 +1097,7 @@ console.clear()
         console.log ("-> Desaparecimentos após as 22 horas")
         console.log ("-> Crianças entre 6 a 10 anos")
         console.log ("-> Desaparecem proximo á RAVENHILL FLOREST")
+        jogoativo3 = false
         pistadelegado=true
         pausarParaContinuar()
     
