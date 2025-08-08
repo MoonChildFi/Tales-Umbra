@@ -746,10 +746,15 @@ if (atender == 2){
     console.clear()
     console.log ("---------------------------------------------------------------------------")
     console.log("-> Você não atende... depois de um tempo.")
+    pausarParaContinuar()
 } else if (atender != 1){
     Opcãoinvalida()
 }
 
+if (atender == 1) {
+    console.clear()
+    console.log ("---------------------------------------------------------------------------")
+    console.log ("-> Você atendeu o celular...")
 console.clear()
 console.log ("███████████████████████████████████████████████████████████████████")
 console.log ("██                                                               ██")
@@ -820,7 +825,7 @@ console.log ("-> 1 SEMANA SE PASSA...")
 console.log ("-> VOCÊ, LAURA E SUAS FILHAS VIAJAM...")
 pausarParaContinuar()
 jogoativo1 = false
-
+}
 }// fim do loop jogo 1
 
 console.clear()
@@ -1024,8 +1029,8 @@ while (jogoativo3 == true) {
     console.log ("-------------------------------------------------------------------")
     console.log ("OPÇÕES:")
     console.log ("-------------------------------------------------------------------")
-    console.log ("[01] Delegado Local.")
-    console.log ("[02] Policial.")
+    console.log ("[01] Policial.")
+    console.log ("[02] Delegado Local.")
     console.log ("[03] Relator do caso.")
     console.log ("-------------------------------------------------------------------")
     console.log ("[04] Consultar Pistas")
@@ -1033,7 +1038,7 @@ while (jogoativo3 == true) {
     let dele = Number(prompt("> "))
 
 console.clear()
-    if (dele == 1){
+    if (dele == 2){
         if (delega1 == true) {
             console.log ("-------------------------------------------------------------------")
             console.log ("-> Você ja falou com ele!")
@@ -1096,7 +1101,7 @@ console.clear()
         pausarParaContinuar()
     
 
-    } else if (dele == 2){
+    } else if (dele == 1){
         if (poli == false) {
         poli = true
         console.log ("-------------------------------------------------------------------")
@@ -1121,6 +1126,32 @@ console.clear()
 
 
     } else if (dele == 3) {
+console.log ("-------------------------------------------------------------------")
+console.log ("-> Você decidi falar com o relator do caso!")
+console.log ("-------------------------------------------------------------------")
+pausarParaContinuar()
+console.clear()
+if (Math.random() < 0.5) {
+    console.log ("---------------------------------------------------------------");
+    console.log ("-> EVENTO ALEATORIO! O RELATOR ESTÁ DE MAL HUMOR!");
+    console.log ("---------------------------------------------------------------");
+    } else {
+    console.log ("---------------------------------------------------------------");
+    console.log ("-> O relator parece estar de bom humor.");
+    console.log ("---------------------------------------------------------------");
+}
+
+        console.log ("-> ELIAS: 'Olá, bom dia!'")  
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> RELATOR: 'Ah oi! Você deve ser o Elias?'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: 'Sim, eu estou encarregado do caso sobre os desaparecimentos!'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> RELATOR: 'Ah estivemos coletando algumas informações, quem tava")
+        console.log ("no comando é o delegado, por que você não fala com ele?'")
+        console.log ("-------------------------------------------------------------------")
+        console.log ("-> ELIAS: Ok, vou lá perguntar a ele! obrigado pela ajuda!")
+        pausarParaContinuar()
 
     } else if (dele == 4) {
         pistas()
